@@ -1,0 +1,32 @@
+.post
+    &-body
+        @apply text-gray-800 text-base
+        blockquote
+            @apply appearance-none pl-4 py-2 border-l-4 border-gray-400 mb-6 text-xl text-gray-900 block
+            p
+                @apply mb-0
+        p
+            @apply mb-6 leading-loose
+        table
+            @apply w-full mb-6 border
+            tr
+                td
+                    @apply py-2 px-4 border-b border-r
+                &:first-child
+                    @apply bg-gray-200
+        iframe
+            @apply w-full h-48
+            @screen md
+                @apply h-92
+        h1, h2, h3, h4
+            @apply mb-3 font-semibold
+            strong
+                @apply font-semibold
+        h1
+            @apply text-3xl
+        h2
+            @apply text-2xl
+        h3
+            @apply text-xl
+        h4
+            @apply text-lg

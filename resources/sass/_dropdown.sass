@@ -1,0 +1,12 @@
+.dropdown
+    &-item
+        &-children
+            @apply mx-5 py-2 block text-blue-200
+            &:hover
+                @apply text-white
+            &:focus
+                @apply text-white outline-none
+    &-toggle
+        @apply cursor-pointer
+        &:hover > .dropdown-item
+            @apply block

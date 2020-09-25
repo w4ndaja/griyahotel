@@ -1,0 +1,19 @@
+.form
+    &-search
+        &:focus
+            &+button
+                @apply bg-white border-blue-200 text-blue-400
+
+    &-feedback
+        @apply text-red-500 block text-sm mt-1
+    &-label
+        @apply block mb-2 text-sm text-gray-700
+    &-group
+        @apply mb-5
+    &-control
+        @apply form-input w-full shadow-none bg-gray-200
+        &:focus
+            @apply outline-none border-blue-500 bg-white
+    &-checkbox, &-radio
+        &:focus, &:checked
+            @apply shadow-none border-transparent

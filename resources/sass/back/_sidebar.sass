@@ -1,0 +1,74 @@
+.sidebar
+    background-color: $gray-800
+    height: 100%
+    width: 350px
+    overflow-x: hidden
+    top: 0
+    left: 0
+    height: 100%
+    position: fixed
+    z-index: 999
+    // display: none
+    @media ("max-width: 500px")
+        position: static
+    &-accordion
+        button
+            text-align: left
+            background-color: $gray-800
+            border: none
+            display: flex
+            justify-content: space-between
+            &:focus
+                outline: none
+
+    &-item
+        color: white
+        display: flex
+        align-items: center
+        svg
+            fill: currentColor
+            margin-right: 5px
+            width: 17px
+        &:hover
+            color: white
+            text-decoration: none
+            background-color: $gray-700
+        &.active
+            background-color: $gray-900
+        &-bottom
+            position: absolute
+            bottom: 0
+            width: 100%
+    &-administrator
+        padding: 24px 12px
+        background-color: $gray-900
+        color: white
+        &-label
+            font-size: 0.8em
+            color: lighten($gray-700, 20%)
+        img
+            border-radius: 999px
+            padding: 3px
+            border: 3px solid lighten($gray-700, 20%)
+
+    &-item
+        color: white
+        display: block
+        padding: 12px 20px
+    &-statistic
+        padding: 20px
+        &-card
+            padding: 16px 30px
+            border-radius: 10px
+            text-align: left
+            color: white
+            background-color: $gray-900
+        &-label
+            color: lighten($gray-700, 20%)
+            font-size: 0.8em
+            text-transform: uppercase
+            margin-bottom: -5px
+        &-counter
+            font-size: 1.5em
+
+
